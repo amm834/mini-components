@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vite App</title>
+    <script type="module" src="/main.js"></script>
+</head>
+<body>
+<main class="grid place-items-center min-h-screen p-4 bg-red-200">
+    <!--    login card -->
+    <div class="relative bg-white rounded-xl overflow-hidden flex flex-col md:flex-row">
+        <!--        left content -->
+        <div class="p-12 flex flex-col justify-center">
+            <!--            Heading -->
+            <h1 class="font-serif text-3xl font-bold text-gray-900">Login</h1>
+            <p class="mt-6  max-w-sm text-gray-600 tracking-wide">
+                Log in to your account to upload or download pictures, videos or music.
+            </p>
+            <!--            input -->
+            <input type="text" placeholder="Enter your email address"
+                   class="transition duration-100 border p-6 w-full rounded-lg my-12 text-lg outline-none focus:border-gray-300">
+
+            <!--            forgot content-->
+            <div class="flex flex-col gap-y-4 md:flex-row md:justify-between md:items-center">
+                <p class="text-teal-500 text-center md:text-left hover:text-teal-600">Forgot Password</p>
+                <button class="transition duration-150 bg-teal-500 text-white  text-lg py-4 px-6 rounded-lg hover:bg-teal-600 font-semibold">
+                    Next <span class="ml-1">&rarr;</span>
+                </button>
+            </div>
+            <!--            divider -->
+            <div class="border-b w-full h-4 my-8"></div>
+            <!--            login with text -->
+            <p class="text-sm text-center text-gray-500 tracking-wide">or login with</p>
+
+            <!--            oAuth login -->
+            <div class="mt-8 flex flex-col gap-y-4 md:flex-row md:gap-x-4">
+                <a href="#"
+                   class="transition duration-200 flex justify-center gap-x-3 text-gray-700 border py-4 rounded-lg items-center md:w-1/2 hover:shadow-lg hover:-translate-y-1">
+                    <img src="login-modal-images/google.png" alt="Google login" class="w-8">
+                    Google
+                </a>
+
+                <a href="#"
+                   class="transition duration-200 flex justify-center gap-x-3 text-gray-700 border py-4 rounded-lg items-center md:w-1/2 hover:shadow-lg hover:-translate-y-1">
+                    <img src="login-modal-images/facebook.png" alt="Google login" class="w-8">
+                    Facebook
+                </a>
+            </div>
+        </div>
+        <!--        right content -->
+        <div class="hidden md:block">
+            <img src="login-modal-images/image.jpg" alt="Ocean" class="w-[425px]">
+        </div>
+
+        <!--        close btn -->
+        <a href="#"
+           class="absolute transition duration-200 top-4 right-4 bg-gray-100 p-2 rounded-full text-gray-800 hover:-translate-y-0.5 md:right-6 md:bg-white shadow-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                 stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+        </a>
+    </div>
+</main>
+</body>
+</html>

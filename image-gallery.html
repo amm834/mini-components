@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vite App</title>
+    <script type="module" src="/main.js"></script>
+</head>
+<body>
+<main class="grid place-items-center min-h-screen bg-green-100 py-8">
+    <!--   card container -->
+    <div class="bg-white shadow-2xl rounded-xl p-10 md:p-40">
+        <!-- Nav bar -->
+        <nav class="flex flex-col items-center text-center gap-y-4 md:flex-row md:gap-x-8 md:justify-end">
+            <div class="group">
+                <a href="#">Vector</a>
+                <div class="transition duration-200 border-b-2 border-b-black mx-2 mt-1 opacity-0 group-hover:opacity-100 px-2 "></div>
+            </div>
+            <div class="group">
+                <a href="#">Illustrations</a>
+                <div class="transition duration-200 border-b-2 border-b-black mx-2 mx-auto mt-1 opacity-0 group-hover:opacity-100"></div>
+            </div>
+            <div class="group">
+                <a href="#">Images</a>
+                <div class="transition duration-200 border-b-2 border-b-black mx-2 mx-auto mt-1 opacity-0 group-hover:opacity-100"></div>
+            </div>
+            <div class="group">
+                <a href="#">Icons</a>
+                <div class="transition duration-200 border-b-2 border-b-black mx-2 mx-auto mt-1 opacity-0 group-hover:opacity-100"></div>
+            </div>
+        </nav>
+
+        <!--        search and upload -->
+        <div class="flex flex-col gap-y-4 md:flex-row md:justify-between md:items-center mt-12">
+            <!--            Search input -->
+            <div class="flex border-b justify-between items-center py-1">
+                <input type="search" placeholder="Search"
+                       class="placeholder:font-thin outline-none placeholder:text-xl md:w-80">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gray-400 py-1" fill="none"
+                     viewBox="0 0 24 24"
+                     stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                </svg>
+            </div>
+            <!--            Upload button -->
+            <button class="transition duration-150 bg-black text-white py-3 px-12 rounded-lg shadow-xl hover:bg-white hover:text-black border border-black">
+                Upload
+            </button>
+        </div>
+
+        <!--        Image -->
+        <div class="grid gap-y-4 md:gap-x-4 md:grid-cols-3 2xl:grid-cols-4 4xl:grid-cols-5  mt-12">
+            <div class="relative group">
+                <img src="gallery-images/image1.jpg" alt="Image" class="w-72">
+                <div class="transition duration-200 absolute bottom-0 w-full px-4 py-2 bg-black text-white bg-opacity-0 opacity-0 group-hover:opacity-100 group-hover:bg-opacity-40 flex justify-between">
+                    <!--                    Text -->
+                    <div>
+                        <h3 class="mb-1 font-medium">Abstract Painting</h3>
+                        <p class="text-xs"> 245 likes - 35 Shares</p>
+                    </div>
+                    <!--                    icon -->
+                    <img src="gallery-images/bookmark.svg" alt="Bookmark">
+                </div>
+            </div>
+
+            <div class="relative group">
+                <img src="gallery-images/image2.jpg" alt="Image" class="w-72">
+                <div class="transition duration-200 absolute bottom-0 w-full px-4 py-2 bg-black text-white bg-opacity-0 opacity-0 group-hover:opacity-100 group-hover:bg-opacity-40 flex justify-between">
+                    <!--                    Text -->
+                    <div>
+                        <h3 class="mb-1 font-medium">Abstract Painting</h3>
+                        <p class="text-xs"> 245 likes - 35 Shares</p>
+                    </div>
+                    <!--                    icon -->
+                    <img src="gallery-images/bookmark.svg" alt="Bookmark">
+                </div>
+            </div>
+
+            <div class="relative group">
+                <img src="gallery-images/image3.jpg" alt="Image" class="w-72">
+                <div class="transition duration-200 absolute bottom-0 w-full px-4 py-2 bg-black text-white bg-opacity-0 opacity-0 group-hover:opacity-100 group-hover:bg-opacity-40 flex justify-between">
+                    <!--                    Text -->
+                    <div>
+                        <h3 class="mb-1 font-medium">Abstract Painting</h3>
+                        <p class="text-xs"> 245 likes - 35 Shares</p>
+                    </div>
+                    <!--                    icon -->
+                    <img src="gallery-images/bookmark.svg" alt="Bookmark">
+                </div>
+            </div>
+
+            <div class="relative group">
+                <img src="gallery-images/image4.jpg" alt="Image" class="w-72">
+                <div class="transition duration-200 absolute bottom-0 w-full px-4 py-2 bg-black text-white bg-opacity-0 opacity-0 group-hover:opacity-100 group-hover:bg-opacity-40 flex justify-between">
+                    <!--                    Text -->
+                    <div>
+                        <h3 class="mb-1 font-medium">Abstract Painting</h3>
+                        <p class="text-xs"> 245 likes - 35 Shares</p>
+                    </div>
+                    <!--                    icon -->
+                    <img src="gallery-images/bookmark.svg" alt="Bookmark">
+                </div>
+            </div>
+
+
+            <div class="relative group">
+                <img src="gallery-images/image5.jpg" alt="Image" class="w-72">
+                <div class="transition duration-200 absolute bottom-0 w-full px-4 py-2 bg-black text-white bg-opacity-0 opacity-0 group-hover:opacity-100 group-hover:bg-opacity-40 flex justify-between">
+                    <!--                    Text -->
+                    <div>
+                        <h3 class="mb-1 font-medium">Abstract Painting</h3>
+                        <p class="text-xs"> 245 likes - 35 Shares</p>
+                    </div>
+                    <!--                    icon -->
+                    <img src="gallery-images/bookmark.svg" alt="Bookmark">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+</body>
+</html>

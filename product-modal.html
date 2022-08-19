@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vite App</title>
+    <script type="module" src="/main.js"></script>
+</head>
+<body class="grid place-items-center min-h-screen bg-slate-100 py-8">
+<!-- card -->
+<div class="px-8 py-12 flex flex-col md:flex-row gap-y-12 md:gap-x-2 bg-white shadow-lg rounded-2xl items-center md:gap-x-8">
+    <!--    card image -->
+    <img src="product-modal-images/headphone.png" alt="Headphone"
+         class="w-60 md:items-start md:justify-start md:self-start">
+
+    <!--    card content -->
+    <div class="flex flex-col items-center gap-y-3 md:items-start md:max-w-full">
+        <span class="inline-block bg-slate-900 text-xs text-white px-3 py-1 rounded-2xl">Free shipping</span>
+        <h2 class="text-slate-900 text-xl  max-w-sm font-medium text-center md:text-left">Razer Kraken Kitty Edt Gaming
+            Headset
+            Quartz</h2>
+        <!--        card price -->
+        <h3 class="line-through text-slate-800 md:mt-4">$799</h3>
+        <h1 class="font-bold text-4xl text-slate-900">$599</h1>
+        <p class="text-xs text-gray-600 mt-4">The offer is valid until April 3 or as long as stock lasts!</p>
+        <!--       add to cart button  -->
+        <button class="text-white outline-none bg-blue-700 w-full rounded-lg border-b-8 border-blue-700  hover:border-t-8 hover:border-blue-700 hover:border-b-0 transition-all duration-100 hover:shadow-xl">
+            <div class="bg-blue-500 py-4 rounded-lg hover:bg-blue-700 uppercase">Add to cart</div>
+        </button>
+        <div class="flex flex-row  items-center gap-x-3">
+            <span class="w-2 h-2 bg-green-500 inline-block rounded-full hover:animate-ping text-gray-700"></span>
+            <span>50+ pcs. in stock.</span>
+        </div>
+
+        <div class="flex flex-col gap-y-3 w-full md:flex-row md:gap-x-4 md:mt-3">
+            <a href="#"
+               class="outline-none flex gap-x-2 bg-white border-2 rounded-lg py-3 px-4 justify-center transition-transform hover:shadow-lg hover:-translate-y-1">
+                <img src="product-modal-images/weight.png" alt="Weight" class="h-6">
+                Add to cart
+            </a>
+            <a href="#"
+               class="outline-none flex gap-x-2 bg-white border-2 rounded-lg py-3 px-4 justify-center transition-transform hover:shadow-lg hover:-translate-y-1">
+                <img src="product-modal-images/heart.png" alt="Weight" class="h-6">
+                Add to wishlist
+            </a>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>

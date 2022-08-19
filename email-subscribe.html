@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vite App</title>
+    <script type="module" src="/main.js"></script>
+</head>
+<body class="grid place-items-center h-screen bg-zinc-600">
+
+<!-- card -->
+<div class="bg-zinc-800 p-2 rounded-lg flex flex-col space-y-4 overflow-hidden md:flex-row md:space-x-4">
+    <figure class="">
+        <img src="./images/image.jpg" alt="Image"
+             class="h-80 w-full object-fit rounded-lg hover:scale-105 transition duration-200 md:h-60 md:rounded-r-none">
+    </figure>
+    <!--    content -->
+    <div class="p-6 max-w-sm">
+        <h3 class="font-medium text-xl text-white font-serif text-center md:text-left">Get diet and fitness tips in your inbox</h3>
+        <p class="text-white text-xs text-center leading-5  tracking-wide mt-4 md:text-left">
+            Eat better and exercise better. Sign up for the Diet&Fitness newsletter.
+        </p>
+
+        <!--        Box -->
+        <div class="flex flex-col mt-6 gap-y-4 md:flex-row md:gap-x-4 ">
+            <input type="text"
+                   class="bg-zinc-800 border border-zinc-500 py-2 px-4 outline-none text-white text-center md:text-left placeholder:text-zinc-700 placeholder:text-xs"
+                   placeholder="Enter your email address">
+            <button class="transition-colors  bg-lime-500 py-3 px-4 text-zinc-700 text-xs rounded hover:bg-lime-900 hover:text-zinc-300">
+                Subscribes
+            </button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
